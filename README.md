@@ -7,9 +7,14 @@ finally to upload this file onto my private cloud storage.
 - VLC (cvlc)
 
 ### Add a new stream
+I am using VLC for recording internet streams.
+
+See this guide for more info:
+https://wiki.videolan.org/Documentation:Streaming_HowTo_New/
+
 Steps:
-- Create a file for the new stream
-- Update `utils/crontab`
+- Create a file for the new stream, take a look at my files
+- Update `utils/crontab` for every new file you create
 
 ### Upload to a cloud storage
 I am running Nextcloud, so this is the only provider I keep in this repository.

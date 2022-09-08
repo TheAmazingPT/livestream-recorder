@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Guide:
-# https://wiki.videolan.org/Documentation:Streaming_HowTo_New/#Example_commandline:_Converting_an_audio_file_to_a_MP3_file
-
 NAME="ndr-blue_nightlounge";
 DURATION='55m';
 

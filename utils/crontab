@@ -1,2 +1,6 @@
 # See "man 5 crontab" for more infos on how to add a line.
 # Also helpful: https://crontab.guru
+#
+# If you are not me, you might want to remove the lines below and add your own!
+4 17-19 * * 1-5 bash $HOME/livestream-recorder/ndr-blue_after-work.sh
+4 0-5 * * *     bash $HOME/livestream-recorder/ndr-blue_nightlounge.sh
