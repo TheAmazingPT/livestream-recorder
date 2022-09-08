@@ -1,6 +1,6 @@
 # Audio Livestream Recorder
-I have a few favorite radio shows, which i like to archive.
-This tool helps me to record the live internet stream, convert it to mp3 and
+I have a few favorite radio shows, which i like to archive and relisten.
+This tool helps me to record the livestream, convert it to mp3 and
 finally to upload this file onto my private cloud storage.
 
 ### Prerequisites
@@ -8,7 +8,6 @@ finally to upload this file onto my private cloud storage.
 
 ### Add a new stream
 I am using VLC for recording internet streams.
-
 See this guide for more info:
 https://wiki.videolan.org/Documentation:Streaming_HowTo_New/
 
@@ -21,23 +20,24 @@ I am running Nextcloud, so this is the only provider I keep in this repository.
 At the end of every stream script, you see that i call my sync-to-nextcloud
 utility. You need to write an utility on your own, if you need something else.
 
-If you like to reuse my Nextcloud script, keep in mind the I expect a certain
+If you like to reuse my Nextcloud script, keep in mind that I expect a certain
 running setup on the system.
 You need the following installed and configured:
-- rclone
-- Private Nextcloud backend configured in rclone
+- [rclone](https://rclone.org/downloads/)
+- [Private Nextcloud backend configured in rclone](https://rclone.org/webdav/#nextcloud)
 
 ### Deployment
-There is no deployment per se. I am cloning this repository onto my server
-and pull every update on there.
-When a new stream was added, you might need to update the user crontab on the
+There is no deployment per se.
+I am cloning this repository onto my server and git pull every update on there.
+When a new stream was added, you might need to update your user crontab on the
 server.
 
 ```sh
-crontab -u USERNAME utils/crontab
+crontab -u YOUR_USERNAME utils/crontab
 ```
 
 ### Legal warning
 You are responsible whether it is allowed for you to record internet streams in
-your jurisdiction. Most often **it is illegal to redistribute** the recordings!
+your jurisdiction.
+Most often **it is illegal to redistribute** the recordings!
 So if you record a livestream, keep it for yourself.
